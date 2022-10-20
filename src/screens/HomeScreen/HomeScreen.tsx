@@ -1,7 +1,8 @@
-import Box from "@src/components/Box";
+import Box from "@src/components/Box/Box";
 import Body from "./patterns/Body/Body";
 import Footer from "./patterns/Footer/Footer";
 import Header from "./patterns/Header/Header";
+
 
 export default function HomeScreen() {
   return (
@@ -9,7 +10,12 @@ export default function HomeScreen() {
         tag= "main"
       >
         <Header />
-        <Body />
+        <Body>
+          <Body.Cadastrar />
+          <Body.Login />
+          <Body.ContinuarApple />
+          <Body.ContinuarGoogle />
+        </Body>
         <Footer />
       </Box>
     )
