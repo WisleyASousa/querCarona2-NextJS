@@ -1,26 +1,23 @@
-import Box from "@src/components/Box";
-import theme from "@src/theme/theme";
-import styled from "styled-components";
+export { default } from '@src/screens/HomeScreen/HomeScreen'
+ 
 
-const MeuComponente = styled.div`
-  color: purple;
-`;
+// import Box from "@src/components/Box";
+// import theme from "@src/theme/theme";
 
-export default function HomeScreen() {
-  return(
-    <Box 
-      tag= 'main'
-      styleSheet={{
-        fontFamily: theme.typography.fontFamily,
-        backgroundColor: {
-          xs: 'red',
-          sm: 'yellow',
-          md: 'blue',
-        }
-      }}>
-        <MeuComponente>
-          Quer Carona 2 - NextJS - FrontEnd
-        </MeuComponente>
-    </Box>
-  )
-}
+
+// export default function HomeScreen() {
+//   return(
+//     <Box 
+//       tag= 'main'
+//       styleSheet={{
+//         fontFamily: theme.typography.fontFamily,
+//         backgroundColor: {
+//           xs: 'red',
+//           sm: 'yellow',
+//           md: 'blue',
+//         }
+//       }}>
+//           Quer Carona 2 - NextJS - FrontEnd
+//     </Box>
+//   )
+// }
