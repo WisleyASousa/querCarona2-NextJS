@@ -1,0 +1,1 @@
+# querCarona2-NextJS
