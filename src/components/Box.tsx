@@ -1,16 +1,18 @@
 import React from "react";
 import { StyleSheet } from "@src/theme/StyleSheet";
+import { BaseComponent } from "@src/theme/BaseComponent";
 
 interface BoxProps {
   tag: any;
   children: React.ReactNode;
-  styleSheet: StyleSheet;}
+  styleSheet: StyleSheet;
+}
 
-export default function Box({ styleSheet, children, tag }: BoxProps) {
+export default function Box({ styleSheet, children, tag, ...props }: BoxProps) {
   const Tag = tag || 'div';
   return (
-      <Tag style={styleSheet}>
+      <BaseComponent styleSheet={styleSheet} {...props}>
         {children}
-      </Tag>
+      </BaseComponent>
     )
-}/Users/wisleya.sousa/Library/Mobile Documents/com~apple~CloudDocs/Programacao/Alura Cursos/NextJS/NextJS-FullStack-Front-end/querCarona2-NextJS/src
+}

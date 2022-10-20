@@ -12,6 +12,11 @@ export default function HomeScreen() {
       tag= 'main'
       styleSheet={{
         fontFamily: theme.typography.fontFamily,
+        backgroundColor: {
+          xs: 'red',
+          sm: 'yellow',
+          md: 'blue',
+        }
       }}>
         <MeuComponente>
           Quer Carona 2 - NextJS - FrontEnd
