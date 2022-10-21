@@ -6,17 +6,21 @@ import Header from "./patterns/Header/Header";
 
 export default function HomeScreen() {
   return (
-      <Box
-        tag= "main"
-      >
-        <Header />
-        <Body>
-          <Body.Cadastrar />
-          <Body.Login />
-          <Body.ContinuarApple />
-          <Body.ContinuarGoogle />
-        </Body>
-        <Footer />
-      </Box>
+    <Box
+      tag= "main"
+      styleSheet={{
+        flex: 1,
+        alignItems: 'center',
+      }}
+    >
+      <Header />
+      <Body>
+        <Body.Cadastrar />
+        <Body.Login />
+        <Body.ContinuarApple />
+        <Body.ContinuarGoogle />
+      </Body>
+      <Footer />
+    </Box>
     )
 }
