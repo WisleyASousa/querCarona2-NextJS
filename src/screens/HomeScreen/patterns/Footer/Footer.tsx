@@ -1,12 +1,15 @@
 import Box from "@src/components/Box/Box";
+import TextFooter from "@src/components/Footer/TextFooter";
 import Text from "@src/components/Text/Text";
 
-export default function Footer() {
+interface FooterProps {
+  children: React.ReactNode;
+}
+
+export default function Footer({ children }) {
   return (
-      <Box>
-        <Text>
-          Footer
-        </Text>
-      </Box>
+    <Box>
+        {children}
+    </Box>
     )
 }

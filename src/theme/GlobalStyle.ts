@@ -13,9 +13,13 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     background-color: #0A0A0A;
     color: #FFFFFF;
+    width: 320px;
+    max-width: 100%;
+    max-height: 100%;
+    margin:0 auto;
   }
   #__next {
-    width: 100%;
+    width: 320px;
     overflow: hidden;
     display: flex;
     flex: 1;
