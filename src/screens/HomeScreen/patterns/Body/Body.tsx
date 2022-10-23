@@ -1,4 +1,5 @@
 import Box from "@src/components/Box/Box";
+import Icon from "@src/components/Icon/Icon";
 import Text from "@src/components/Text/Text";
 import React from "react";
 
@@ -39,6 +40,7 @@ Body.Login = () => {
 Body.ContinuarApple = () => {
   return (
       <Box>
+        <Icon name="apple" />
         <Text>
           Botao Login com conta Apple
         </Text>
@@ -48,6 +50,7 @@ Body.ContinuarApple = () => {
 Body.ContinuarGoogle = () => {
   return (
       <Box>
+        <Icon name="google" />
         <Text>
           Botao Login com conta Google
         </Text>
