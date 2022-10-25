@@ -1,12 +1,31 @@
 import Box from "@src/components/Box/Box";
-import Text from "@src/components/Text/Text";
+import React from "react";
+import Image from "next/future/image";
+import profilePic from "../../../../../public/img/QuerCaronalogo2.png"
+interface HearderProps {
+  children: React.ReactNode;
+  styleSheet?: StyleSheet;
+}
 
-export default function Header() {
+export default function Header({ children, styleSheet }) {
   return (
       <Box>
-        <Text tag='h1' variant="display1">
-          Quer Carona?
-        </Text>
+          {children}
       </Box>
     )
+}
+Header.Imagem = () => {
+  return (
+    <Box
+      styleSheet={{
+        paddingTop: '2rem'
+      }}
+    >
+      <Image
+        src={profilePic}
+        alt="Logo do 'Quer Carona?'"
+        
+        />
+    </Box>
+  )
 }

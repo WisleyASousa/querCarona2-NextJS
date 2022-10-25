@@ -6,9 +6,10 @@ import React from "react";
 
 interface BodyProps {
   children: React.ReactNode;
+  styleSheet?: StyleSheet;
 }
 
-export default function Body({ children }) {
+export default function Body({ children, styleSheet }) {
   return (
       <Box>
         <Text>
@@ -39,20 +40,33 @@ Body.Login = () => {
 }
 Body.ContinuarApple = () => {
   return (
-      <Box>
+      <Box
+        styleSheet={{
+          flexDirection: "row",
+          alignItems:"center",
+          gap:"2rem",
+
+      }}
+      >
         <Icon name="apple" />
         <Text>
-          Botao Login com conta Apple
+          Continuar com Apple
         </Text>
       </Box>
     )
 }
 Body.ContinuarGoogle = () => {
   return (
-      <Box>
+      <Box
+        styleSheet={{
+          flexDirection: "row",
+          alignItems:"center",
+          gap:"2rem",
+      }}
+      >
         <Icon name="google" />
         <Text>
-          Botao Login com conta Google
+          Continuar com Google
         </Text>
       </Box>
     )

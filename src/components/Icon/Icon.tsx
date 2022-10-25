@@ -6,20 +6,22 @@ interface IconProps {
 }
 
 
-export default function Icon({ name }: IconProps) {
+export default function Icon({ name, ...props }: IconProps) {
   const CurrentIcon = icons[name];
  
   return (
       <BaseComponent
         as="svg"
         styleSheet={{
-          width: "14px",
-          height: "16px",
+          width: "12px",
+          height: "14px",
         }}
         color="inherit"
         fill="currentColor"
         viewBox="0 0 14 16"
         xmlns="http://www.w3.org/2000/svg"
+        {...props}
+
       >
 
         <CurrentIcon />

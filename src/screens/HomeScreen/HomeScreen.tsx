@@ -17,7 +17,9 @@ export default function HomeScreen() {
 
       }}
     >
-      <Header />
+      <Header>
+        <Header.Imagem />
+      </Header>
       <Body>
         <Body.Cadastrar />
         <Body.Login />
