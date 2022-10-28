@@ -7,7 +7,7 @@ interface HearderProps {
   styleSheet?: StyleSheet;
 }
 
-export default function Header({ children, styleSheet }) {
+export default function Header({ children }) {
   return (
       <Box>
           {children}

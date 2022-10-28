@@ -1,6 +1,8 @@
 import Box from "@src/components/Box/Box";
 import Icon from "@src/components/Icon/Icon";
 import Text from "@src/components/Text/Text";
+import theme from "@src/theme/theme";
+import { useTheme } from "@src/theme/ThemeProvider";
 import React from "react";
 
 
@@ -9,12 +11,15 @@ interface BodyProps {
   styleSheet?: StyleSheet;
 }
 
-export default function Body({ children, styleSheet }) {
+export default function Body({ children }) {
+  
+
   return (
-      <Box>
-        <Text>
-          Body
-        </Text>
+      <Box
+      styleSheet={{
+        gap: '1rem'
+      }}  
+      >
         {children}
       </Box>
     )
@@ -23,8 +28,20 @@ export default function Body({ children, styleSheet }) {
 Body.Cadastrar = () => {
   return (
       <Box>
-        <Text>
-          Botao Cadastrar
+        <Text 
+          styleSheet={{
+            backgroundColor: theme.colors.primary.x400,
+            color: theme.colors.neutral.x999,
+            fontWeight: '600',
+            borderRadius: '5px',
+            boxShadow: 'inset -2px -2px 5px rgba(0, 0, 0, 0.25)',
+            paddingTop: '0.2rem',
+            paddingBottom: '0.2rem',
+            
+
+          }}
+        >
+          Cadastre-se
         </Text>
       </Box>
     )
@@ -32,8 +49,20 @@ Body.Cadastrar = () => {
 Body.Login = () => {
   return (
       <Box>
-        <Text>
-          Botao de Login
+        <Text
+          styleSheet={{
+            color: theme.colors.neutral.x000,
+            fontWeight: '500',
+            border: 'solid 1px',
+            borderColor: theme.colors.neutral.x500,
+            borderRadius: '5px',
+            paddingTop: '0.2rem',
+            paddingBottom: '0.2rem',
+            
+
+        }}
+        >
+          Entrar
         </Text>
       </Box>
     )
@@ -44,8 +73,16 @@ Body.ContinuarApple = () => {
         styleSheet={{
           flexDirection: "row",
           alignItems:"center",
-          gap:"2rem",
+          gap:'1rem',
+          border: 'solid 1px',
+          borderColor: theme.colors.neutral.x500,
+          borderRadius: '5px',
+          paddingLeft: '1.5rem',
+          paddingRight: '1.5rem',
+          paddingTop: '0.2rem',
+          paddingBottom: '0.2rem',
 
+          
       }}
       >
         <Icon name="apple" />
@@ -61,7 +98,14 @@ Body.ContinuarGoogle = () => {
         styleSheet={{
           flexDirection: "row",
           alignItems:"center",
-          gap:"2rem",
+          gap:'1rem',
+          border: 'solid 1px',
+          borderColor: theme.colors.neutral.x500,
+          borderRadius: '5px',
+          paddingLeft: '1.5rem',
+          paddingRight: '1.5rem',
+          paddingTop: '0.2rem',
+          paddingBottom: '0.2rem',
       }}
       >
         <Icon name="google" />
