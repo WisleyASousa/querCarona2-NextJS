@@ -41,7 +41,6 @@ Body.Cadastrar = () => {
                 boxShadow: 'inset -2px -2px 5px rgba(0, 0, 0, 0.25)',
                 paddingTop: '0.2rem',
                 paddingBottom: '0.2rem',
-                
 
               }}
             >
@@ -54,21 +53,24 @@ Body.Cadastrar = () => {
 Body.Login = () => {
   return (
       <Box>
-        <Text
-          styleSheet={{
-            color: theme.colors.neutral.x000,
-            fontWeight: '500',
-            border: 'solid 1px',
-            borderColor: theme.colors.neutral.x500,
-            borderRadius: '5px',
-            paddingTop: '0.2rem',
-            paddingBottom: '0.2rem',
-            
+        <ButtonBase
+          href="/">
+          <Text
+            styleSheet={{
+              color: theme.colors.neutral.x000,
+              fontWeight: '500',
+              border: 'solid 1px',
+              borderColor: theme.colors.neutral.x500,
+              borderRadius: '5px',
+              paddingTop: '0.2rem',
+              paddingBottom: '0.2rem',
+              
 
-        }}
-        >
-          Entrar
-        </Text>
+          }}
+          >
+            Entrar
+          </Text>
+        </ButtonBase>
       </Box>
     )
 }

@@ -1,4 +1,5 @@
 import Box from "@src/components/Box/Box";
+import ButtonBase from "@src/components/Button/ButtonBase";
 import TextFooter from "@src/components/Footer/TextFooter";
 import Link from "@src/components/Link/Link";
 import Text from "@src/components/Text/Text";
@@ -24,8 +25,14 @@ export default function HomeScreen() {
       <Body>
         <Body.Cadastrar />
         <Body.Login />
-        <Body.ContinuarApple />
-        <Body.ContinuarGoogle />
+        <ButtonBase
+          href="/">
+          <Body.ContinuarApple />
+        </ButtonBase>
+        <ButtonBase
+          href="/">
+          <Body.ContinuarGoogle />
+        </ButtonBase>
       </Body>
       <TextFooter>
           O quer carona usa cookies para conteúdo e anúncios personalizados de análise. 
