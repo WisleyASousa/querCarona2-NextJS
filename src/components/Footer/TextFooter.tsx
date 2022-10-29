@@ -7,13 +7,15 @@ import { useTheme } from "@src/theme/ThemeProvider";
 
 interface FooterProps {
   variant?: ThemeTypographyVariants;
-  tag?: 'p';
+  tag?: 'p' | 'span' | string;
   children?: React.ReactNode;
   styleSheet?: StyleSheet;
+  ref: any;
+
 }
 
-export default function TextFooter({ styleSheet, children, tag, variant, ...props }: FooterProps){
-  const Tag = tag || 'p';
+const TextFooter = React.forwardRef(({ styleSheet, tag, variant, ...props }: FooterProps, ref) => {
+  const Tag = tag;
 
   const theme = useTheme();
   const textvariant = theme.typography.variants[variant];
@@ -32,13 +34,16 @@ export default function TextFooter({ styleSheet, children, tag, variant, ...prop
           paddingRight: '2rem',
           paddingBottom: '1rem',
           width: '320px',
-      }}>
-        {children}
-      </BaseComponent> 
+          
+      }} ref={ref}
+      {...props} />
+        
     )
-}
+})
 
 TextFooter.defaultProps = {
   tag: 'p',
   variant: 'body5',
 };
+
+export default TextFooter;

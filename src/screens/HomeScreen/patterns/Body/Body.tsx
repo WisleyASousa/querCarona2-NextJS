@@ -1,5 +1,7 @@
 import Box from "@src/components/Box/Box";
+import ButtonBase from "@src/components/Button/ButtonBase";
 import Icon from "@src/components/Icon/Icon";
+
 import Text from "@src/components/Text/Text";
 import theme from "@src/theme/theme";
 import { useTheme } from "@src/theme/ThemeProvider";
@@ -28,21 +30,24 @@ export default function Body({ children }) {
 Body.Cadastrar = () => {
   return (
       <Box>
-        <Text 
-          styleSheet={{
-            backgroundColor: theme.colors.primary.x400,
-            color: theme.colors.neutral.x999,
-            fontWeight: '600',
-            borderRadius: '5px',
-            boxShadow: 'inset -2px -2px 5px rgba(0, 0, 0, 0.25)',
-            paddingTop: '0.2rem',
-            paddingBottom: '0.2rem',
-            
+        <ButtonBase
+          href="/criarConta-email">
+            <Text 
+              styleSheet={{
+                backgroundColor: theme.colors.primary.x400,
+                color: theme.colors.neutral.x999,
+                fontWeight: '600',
+                borderRadius: '5px',
+                boxShadow: 'inset -2px -2px 5px rgba(0, 0, 0, 0.25)',
+                paddingTop: '0.2rem',
+                paddingBottom: '0.2rem',
+                
 
-          }}
-        >
-          Cadastre-se
-        </Text>
+              }}
+            >
+              Cadastre-se
+            </Text>
+          </ButtonBase>
       </Box>
     )
 }
