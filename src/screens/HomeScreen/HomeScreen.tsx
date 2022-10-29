@@ -3,6 +3,7 @@ import ButtonBase from "@src/components/Button/ButtonBase";
 import TextFooter from "@src/components/Footer/TextFooter";
 import Link from "@src/components/Link/Link";
 import Text from "@src/components/Text/Text";
+import theme from "@src/theme/theme";
 import Body from "./patterns/Body/Body";
 import Footer from "./patterns/Footer/Footer";
 import Header from "./patterns/Header/Header";
@@ -26,11 +27,33 @@ export default function HomeScreen() {
         <Body.Cadastrar />
         <Body.Login />
         <ButtonBase
-          href="/">
+          href="/"
+          styleSheet={{
+            borderRadius: '5px',
+
+            hover: {
+              backgroundColor: '#F3B507',
+              color: '#111111',
+              boxShadow: 'inset -2px -2px 5px rgba(0, 0, 0, 0.50)',
+
+            }
+          }}
+          >
           <Body.ContinuarApple />
         </ButtonBase>
         <ButtonBase
-          href="/">
+          href="/"
+          styleSheet={{
+            borderRadius: '5px',
+
+            hover: {
+              backgroundColor: '#F3B507',
+              color: '#111111',
+              boxShadow: 'inset -2px -2px 5px rgba(0, 0, 0, 0.50)',
+
+            }
+          }}
+          >
           <Body.ContinuarGoogle />
         </ButtonBase>
       </Body>
@@ -39,7 +62,9 @@ export default function HomeScreen() {
           Ao usar os serviços do que carona, você concorda com esse uso de cokkies. 
           <Link 
             href="/sabermais"
-            colorVariant='neutral'
+            styleSheet={{
+              color: theme.colors.primary.x400
+            }}
             variant='body5'
           >
             Saber mais

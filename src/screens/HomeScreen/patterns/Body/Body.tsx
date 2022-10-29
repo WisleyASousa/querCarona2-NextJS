@@ -38,9 +38,16 @@ Body.Cadastrar = () => {
                 color: theme.colors.neutral.x999,
                 fontWeight: '600',
                 borderRadius: '5px',
-                boxShadow: 'inset -2px -2px 5px rgba(0, 0, 0, 0.25)',
+                boxShadow: 'inset -2px -2px 5px rgba(0, 0, 0, 0.50)',
                 paddingTop: '0.2rem',
                 paddingBottom: '0.2rem',
+                
+                hover: {
+                  backgroundColor: '#FCE588',
+                  color: '#111111',
+                
+                }
+     
 
               }}
             >
@@ -58,14 +65,20 @@ Body.Login = () => {
           <Text
             styleSheet={{
               color: theme.colors.neutral.x000,
-              fontWeight: '500',
+              fontWeight: '600',
               border: 'solid 1px',
-              borderColor: theme.colors.neutral.x500,
+              
+              borderColor: theme.colors.primary.x400,
               borderRadius: '5px',
               paddingTop: '0.2rem',
               paddingBottom: '0.2rem',
-              
+              boxShadow: 'inset -2px -2px 5px rgba(0, 0, 0, 0.50)',
 
+              hover: {
+                  backgroundColor: '#F3B507',
+                  color: '#111111',
+                  
+                }
           }}
           >
             Entrar
