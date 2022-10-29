@@ -1,3 +1,4 @@
+import { BaseComponent } from "@src/theme/BaseComponent";
 import { StyleSheet } from "@src/theme/StyleSheet";
 import { ThemeTypographyVariants } from "@src/theme/theme";
 import { useTheme } from "@src/theme/ThemeProvider";
@@ -14,6 +15,7 @@ interface TextProps {
 }
 
 export default function Text({
+  tag,
   styleSheet, 
   variant,
   ...props
@@ -22,7 +24,8 @@ export default function Text({
   const theme = useTheme();
   const textvariant = theme.typography.variants[variant];
   return (
-    <Box 
+    <BaseComponent
+      as={tag}
       styleSheet={{ 
         fontFamily: theme.typography.fontFamily,
         ...textvariant,

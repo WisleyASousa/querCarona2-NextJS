@@ -19,18 +19,19 @@ export default function TextFooter({ styleSheet, children, tag, variant, ...prop
   const textvariant = theme.typography.variants[variant];
   return (
      <BaseComponent
-      styleSheet={{
-        fontFamily: theme.typography.fontFamily,
-        color: '#BCBCBC',
-        ...textvariant,
-        textAlign: "justify",
-        position: 'fixed',
-        bottom: '0',
-        alignItems: 'center',
-        paddingLeft: '2rem',
-        paddingRight: '2rem',
-        paddingBottom: '1rem',
-        width: '320px',
+        as={Tag}
+        styleSheet={{
+          fontFamily: theme.typography.fontFamily,
+          color: '#BCBCBC',
+          ...textvariant,
+          textAlign: "justify",
+          position: 'fixed',
+          bottom: '0',
+          alignItems: 'center',
+          paddingLeft: '2rem',
+          paddingRight: '2rem',
+          paddingBottom: '1rem',
+          width: '320px',
       }}>
         {children}
       </BaseComponent> 
