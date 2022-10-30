@@ -26,15 +26,54 @@ export default function HomeScreen() {
       <Body>
         <Body.Cadastrar />
         <Body.Login />
+        <Box
+          styleSheet={{
+            display: 'flex',
+            flexFlow: 'row wrap',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}
+        >
+        <Box
+          styleSheet={{
+            width: '80px',
+            height: '0px',
+            backgroundColor: '#F3B507',
+            border: "1px solid #F3B507",
+          }}
+        >
+        </Box>
+        <Box
+          styleSheet={{
+            width: '33px',
+            height: '24px',
+            fontSize: '15px',
+            lineHeight: '18px',
+            color: '#BCBCBC',
+          }}
+        >
+          ou
+        </Box>
+        <Box
+          styleSheet={{
+            width: '80px',
+            height: '0px',
+            border: "1px solid #F3B507",
+            backgroundColor: '#F3B507',
+
+          }}
+        >
+        </Box>
+        </Box>
         <ButtonBase
           href="/"
           styleSheet={{
             borderRadius: '5px',
+            border: 'solid 1px',
+            borderColor: theme.colors.neutral.x999,
 
-            hover: {
-              backgroundColor: '#F3B507',
-              color: '#111111',
-              boxShadow: 'inset -2px -2px 5px rgba(0, 0, 0, 0.50)',
+            hover: {  
+              borderColor: theme.colors.primary.x400,
 
             }
           }}
@@ -45,11 +84,11 @@ export default function HomeScreen() {
           href="/"
           styleSheet={{
             borderRadius: '5px',
+            border: 'solid 1px',
+            borderColor: theme.colors.neutral.x999,
 
             hover: {
-              backgroundColor: '#F3B507',
-              color: '#111111',
-              boxShadow: 'inset -2px -2px 5px rgba(0, 0, 0, 0.50)',
+              borderColor: theme.colors.primary.x400,
 
             }
           }}

@@ -75,7 +75,7 @@ Body.Login = () => {
               boxShadow: 'inset -2px -2px 5px rgba(0, 0, 0, 0.50)',
 
               hover: {
-                  backgroundColor: '#F3B507',
+                  backgroundColor: '#FCE588',
                   color: '#111111',
                   
                 }

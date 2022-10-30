@@ -34,8 +34,8 @@ export default function ButtonBase({
     // colocando efeito no button
   const ref = React.useRef();
   useRipple(ref, {
-    animationLength: 500, 
-    rippleColor: 'rgba(255, 255, 255, 0.7)',
+    animationLength: 300, 
+    rippleColor: 'rgba(243, 181, 7, 0.8)',
   });
   
   // confirmando se é um link
