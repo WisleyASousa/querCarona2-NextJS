@@ -15,7 +15,7 @@ import { useRouter } from "next/router";
 
 const StyledButton = styled(Text)<any>``;
 
-interface ButtonBase {
+export interface ButtonBaseProps {
   href?: string;
   children: React.ReactNode;
   textVariant?: ThemeTypographyVariants;
@@ -29,7 +29,7 @@ export default function ButtonBase({
   textVariant,
   styleSheet,
   ...props
-}: ButtonBase) {
+}: ButtonBaseProps) {
   const router = useRouter();
     // colocando efeito no button
   const ref = React.useRef();
